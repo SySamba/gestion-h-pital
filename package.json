@@ -7,7 +7,9 @@
     "backend": "npm run dev --prefix backend",
     "web": "npm run dev --prefix web",
     "mobile": "npm run dev --prefix frontend",
-    "install:all": "npm install --prefix backend && npm install --prefix web && npm install --prefix frontend"
+    "install:all": "npm install --prefix backend && npm install --prefix web && npm install --prefix frontend",
+    "build": "npm install --prefix backend && npm install --prefix web && npm run build --prefix web",
+    "start": "node backend/src/index.js"
   },
   "dependencies": {
     "xlsx": "^0.18.5"

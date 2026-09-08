@@ -22,6 +22,16 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api/v1', routes);
 
+// ─── Frontend React (production) ───
+const distDir = path.join(__dirname, '../../web/dist');
+if (fs.existsSync(distDir)) {
+  app.use(express.static(distDir));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) return next();
+    res.sendFile(path.join(distDir, 'index.html'));
+  });
+}
+
 app.use((req, res) => {
   res.status(404).json({ success: false, message: 'Route non trouvée' });
 });
