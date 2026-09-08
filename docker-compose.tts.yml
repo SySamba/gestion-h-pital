@@ -1,0 +1,11 @@
+# Voix wolof sénégalaise (GalsenAI xTTS-v2)
+# Windows : ne pas utiliser d'URL GitHub dans docker-compose — build local uniquement.
+
+services:
+  wolof-tts:
+    build:
+      context: ./services/wolof-tts
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

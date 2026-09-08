@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Plateforme Hospitalière",
+    "slug": "gestion-hopital",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#2563EB"
+    },
+    "android": {
+      "package": "com.gestionhopital.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.gestionhopital.app"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}

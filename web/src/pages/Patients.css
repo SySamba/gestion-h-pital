@@ -1,0 +1,105 @@
+.patients-toolbar {
+  margin-bottom: 28px;
+  padding: 20px 24px !important;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-input {
+  margin-bottom: 0 !important;
+  max-width: 480px;
+  flex: 1;
+}
+
+.patients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.patient-card {
+  padding: 26px !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.patient-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.patient-card-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.patient-card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.patient-card-top h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.patient-card-age {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.patient-card-info { flex: 1; }
+
+.patient-card-info p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.allergy-tag {
+  color: #b45309 !important;
+  font-weight: 600;
+  background: var(--warning-soft);
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 6px;
+  border: 1px solid #fde68a;
+}
+
+.patient-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.patient-card-actions .btn {
+  justify-content: center;
+  width: 100%;
+}
+
+.patient-card-actions .btn:only-child,
+.patient-card-actions .btn:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}

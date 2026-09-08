@@ -1,0 +1,163 @@
+.nouvelle-consultation {
+  max-width: 720px;
+}
+
+.nc-search-card {
+  margin-bottom: 20px;
+  padding: 24px !important;
+}
+
+.nc-search-label {
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.nc-search-input {
+  font-size: 18px !important;
+  padding: 16px 18px !important;
+}
+
+.nc-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.nc-results h3,
+.nc-new-card h3,
+.nc-success h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+}
+
+.nc-patient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nc-patient-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 2px solid var(--border-light);
+  border-radius: 12px;
+  background: var(--bg);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: all 0.15s;
+}
+
+.nc-patient-item:hover,
+.nc-patient-item.selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+}
+
+.nc-patient-item.selected {
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.nc-patient-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.nc-patient-item strong { display: block; font-size: 15px; }
+.nc-patient-item span { font-size: 12px; color: var(--text-muted); }
+
+.nc-action-panel {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.nc-action-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.nc-action-row select { flex: 1; min-width: 160px; }
+.btn-lg { padding: 14px 28px !important; font-size: 15px !important; }
+
+.nc-new-card {
+  border: 2px dashed var(--primary) !important;
+  background: #f8fafc !important;
+}
+
+.nc-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .nc-form-grid { grid-template-columns: 1fr; }
+}
+
+.nc-empty {
+  text-align: center;
+  padding: 40px !important;
+  color: var(--text-muted);
+}
+
+.nc-success {
+  margin-top: 24px;
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+}
+
+.nc-success-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.nc-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.nc-ticket-num {
+  font-size: 28px;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.nc-credentials {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  border: 1px solid #bbf7d0;
+}
+
+.nc-credentials code {
+  background: #ecfdf5;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.nc-success-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

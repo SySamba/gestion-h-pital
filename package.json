@@ -1,0 +1,15 @@
+{
+  "name": "gestion-hopital",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plateforme hospitalière — Web + Mobile + API",
+  "scripts": {
+    "backend": "npm run dev --prefix backend",
+    "web": "npm run dev --prefix web",
+    "mobile": "npm run dev --prefix frontend",
+    "install:all": "npm install --prefix backend && npm install --prefix web && npm install --prefix frontend"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

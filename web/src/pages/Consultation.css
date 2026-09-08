@@ -1,0 +1,113 @@
+.consultation-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.consultation-sidebar { padding: 24px !important; position: sticky; top: 90px; }
+
+.sidebar-patient { text-align: center; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+
+.sidebar-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 auto 12px;
+}
+
+.sidebar-patient h3 { font-size: 18px; margin-bottom: 8px; }
+.sidebar-patient p { font-size: 13px; color: var(--text-muted); margin: 4px 0; }
+
+.sidebar-allergy {
+  background: #fef3c7;
+  color: #b45309;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.sidebar-qr { font-size: 11px; font-family: monospace; margin-top: 12px; word-break: break-all; }
+
+.sidebar-history h4 { font-size: 13px; font-weight: 700; margin-bottom: 12px; color: var(--text-muted); }
+
+.mini-history {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mini-history:last-child { border-bottom: none; }
+.mini-history small { color: var(--primary); font-weight: 600; font-size: 11px; }
+.mini-history p { font-size: 13px; margin-top: 4px; }
+
+.consultation-main { padding: 0 !important; overflow: hidden; }
+
+.consultation-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: #f8fafc;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.tab-btn:hover { color: var(--primary); background: rgba(13, 110, 159, 0.05); }
+
+.tab-btn.active {
+  color: var(--primary);
+  background: var(--surface);
+  border-bottom: 3px solid var(--primary);
+  margin-bottom: -1px;
+}
+
+.consultation-form { padding: 28px 32px; }
+
+.consultation-form h3 { font-size: 18px; margin-bottom: 8px; }
+
+.form-hint {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.consultation-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.textarea { resize: vertical; min-height: 80px; margin-bottom: 16px; }
+
+.med-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 120px;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 900px) {
+  .consultation-layout { grid-template-columns: 1fr; }
+  .consultation-sidebar { position: static; }
+  .med-row { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gestion-hopital-backend",
+  "version": "1.0.0",
+  "description": "API Node.js pour la plateforme hospitalière",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node scripts/seed.js",
+    "migrate:v4": "node scripts/migrate-v4.js",
+    "migrate:v5": "node scripts/migrate-v5.js",
+    "migrate:v6": "node scripts/migrate-v6.js",
+    "migrate:v7": "node scripts/migrate-v7.js",
+    "migrate:v8": "node scripts/migrate-v8.js",
+    "migrate:v9": "node scripts/migrate-v9.js"
+  },
+  "keywords": [
+    "hospital",
+    "api",
+    "nodejs",
+    "mysql"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "edge-tts-universal": "^1.4.0",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "pdfkit": "^0.20.2"
+  }
+}

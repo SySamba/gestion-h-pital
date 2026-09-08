@@ -1,0 +1,14 @@
+node_modules/
+web/dist/
+.env
+!backend/.env.example
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.log
+.DS_Store
+Thumbs.db
+
+# React Native
+frontend/android/app/build/
+frontend/ios/build/
+frontend/.expo/
