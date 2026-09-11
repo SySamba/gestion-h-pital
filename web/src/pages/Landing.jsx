@@ -4,6 +4,7 @@ import { api } from '../api/api';
 import { BRAND } from '../constants/branding';
 import { useInView } from '../hooks/useInView';
 import { Icon } from '../components/LandingIcons';
+import InstallPrompt from '../components/InstallPrompt';
 import './Landing.css';
 
 const CONTACT = {
@@ -1155,6 +1156,7 @@ export default function Landing() {
 
   return (
     <>
+      <InstallPrompt />
       <header className="landing-nav" role="banner">
         <div className="landing-nav-inner">
           <Link to="/" className="landing-logo">
