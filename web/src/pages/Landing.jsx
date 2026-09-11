@@ -7,9 +7,10 @@ import { Icon } from '../components/LandingIcons';
 import './Landing.css';
 
 const CONTACT = {
-  email: 'contact@medikasn.sn',
-  phone: '+221 33 800 00 00',
-  whatsapp: '221770000000',
+  email: 'sambasy837@gmail.com',
+  phone: '77 378 48 14',
+  whatsapp: '221773784814',
+  portfolio: 'https://sambasy.com',
 };
 
 const FEATURES = [
@@ -1467,6 +1468,7 @@ export default function Landing() {
             <h4>Contact</h4>
             <a href={`tel:${contactPhone.replace(/\s/g, '')}`}>{contactPhone}</a>
             <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+            <a href={CONTACT.portfolio} target="_blank" rel="noopener noreferrer">Portfolio</a>
             <a href="#demo">Demander une démonstration</a>
           </div>
         </div>
